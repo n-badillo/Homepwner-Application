@@ -71,12 +71,12 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="GFZ-is-1xW" firstAttribute="leading" secondItem="Xvc-JV-XRk" secondAttribute="leading" id="9EW-ip-PJ2"/>
-                                        <constraint firstItem="Xvc-JV-XRk" firstAttribute="top" secondItem="euh-ja-cjl" secondAttribute="topMargin" id="FD9-TB-SI2"/>
-                                        <constraint firstItem="Xvc-JV-XRk" firstAttribute="leading" secondItem="euh-ja-cjl" secondAttribute="leadingMargin" id="VP9-tC-KYo"/>
-                                        <constraint firstItem="GFZ-is-1xW" firstAttribute="bottom" secondItem="euh-ja-cjl" secondAttribute="bottomMargin" id="bOq-Kr-0lB"/>
-                                        <constraint firstAttribute="trailing" secondItem="5QH-qi-fbP" secondAttribute="trailing" constant="20" id="cRJ-ma-Hjg"/>
-                                        <constraint firstItem="5QH-qi-fbP" firstAttribute="centerY" secondItem="euh-ja-cjl" secondAttribute="centerY" id="xbO-BU-ZBF"/>
+                                        <constraint firstAttribute="trailing" secondItem="5QH-qi-fbP" secondAttribute="trailing" constant="20" id="FkG-IT-YiU"/>
+                                        <constraint firstItem="5QH-qi-fbP" firstAttribute="centerY" secondItem="euh-ja-cjl" secondAttribute="centerY" id="VjJ-yY-ArM"/>
+                                        <constraint firstItem="GFZ-is-1xW" firstAttribute="leading" secondItem="Xvc-JV-XRk" secondAttribute="leading" id="Xt7-Kv-OSH"/>
+                                        <constraint firstItem="Xvc-JV-XRk" firstAttribute="leading" secondItem="euh-ja-cjl" secondAttribute="leadingMargin" id="f78-1j-Jb3"/>
+                                        <constraint firstItem="Xvc-JV-XRk" firstAttribute="top" secondItem="euh-ja-cjl" secondAttribute="topMargin" id="gLk-ho-YlP"/>
+                                        <constraint firstItem="GFZ-is-1xW" firstAttribute="bottom" secondItem="euh-ja-cjl" secondAttribute="bottomMargin" id="mjy-58-eNa"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

@@ -47,7 +47,8 @@ class ItemsViewController: UITableViewController{
         let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
-        tableView.rowHeight = 65
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 65
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -98,12 +99,7 @@ class ItemsViewController: UITableViewController{
             
             // Present the alert controller
             present(ac, animated: true, completion: nil)
-            
-            // Remove the item from the store
-            itemStore.removeItem(item)
-            
-            // Also remove that row from the table view with an animation
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+        
         }
     }
     
