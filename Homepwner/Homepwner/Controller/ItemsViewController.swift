@@ -11,6 +11,27 @@ import UIKit
 class ItemsViewController: UITableViewController{
     var itemStore: ItemStore!
     
+    @IBAction func addNewItem(_ sender: UIButton){
+        
+    }
+    
+    @IBAction func toggleEditingMode(_ sender: UIButton){
+        // If you are currently editing
+        if isEditing {
+            // Change text of button to inform user of editing state
+            sender.setTitle("Edit", for: .normal)
+            
+            // Turn off editing mode
+            setEditing(false, animated: true)
+        } else {
+            // Change text of button to inform user of state
+            sender.setTitle("Done", for: .normal)
+            
+            // Enter editing mode
+            setEditing(true, animated: true)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,13 +51,16 @@ class ItemsViewController: UITableViewController{
         // Create an instance of UITableViewCell, with default appearance
         let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
         
-        // CURRENTLY BREAKS IT
+        // ================= CURRENTLY BREAKS IT =====================
         // Get a new or recylced cell
         //let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        // ===========================================================
+        
         
         // Set the text on the cell with the description of the item
         // that is at the nth index of items, where n = row this cell
         // will appear in on the tableView
+        
         let item = itemStore.allItems[indexPath.row]
         
         cell.textLabel?.text = item.name
