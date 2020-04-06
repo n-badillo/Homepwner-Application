@@ -31,6 +31,9 @@
                                                 <rect key="frame" x="53" y="0.0" width="345" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="DA6-4X-0Be" id="cXR-Hc-5Yt"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -47,6 +50,9 @@
                                                 <rect key="frame" x="51" y="0.0" width="347" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="DA6-4X-0Be" id="8sT-uk-QU8"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -63,6 +69,9 @@
                                                 <rect key="frame" x="50" y="0.0" width="348" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="DA6-4X-0Be" id="le7-dr-619"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -80,6 +89,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="339-XA-ej3" firstAttribute="bottom" secondItem="5Ux-7B-SmR" secondAttribute="bottom" constant="8" id="0iB-ze-QdQ"/>
                             <constraint firstItem="339-XA-ej3" firstAttribute="trailing" secondItem="5Ux-7B-SmR" secondAttribute="trailing" constant="8" id="PBN-jN-hYA"/>
@@ -87,6 +97,9 @@
                             <constraint firstItem="5Ux-7B-SmR" firstAttribute="top" secondItem="339-XA-ej3" secondAttribute="top" constant="8" id="xsE-zU-G1d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="339-XA-ej3"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rVm-nj-mD3" appends="YES" id="IMH-us-ABL"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="1w0-1c-vl7"/>
                     <connections>
@@ -97,6 +110,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIC-So-hq0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rVm-nj-mD3">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="DA6-4X-0Be" id="RWR-TZ-eVF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1892.753623188406" y="-40.178571428571423"/>
         </scene>
