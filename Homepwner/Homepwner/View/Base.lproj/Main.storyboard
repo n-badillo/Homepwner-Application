@@ -79,6 +79,11 @@
                                         <constraint firstItem="5QH-qi-fbP" firstAttribute="centerY" secondItem="euh-ja-cjl" secondAttribute="centerY" id="xbO-BU-ZBF"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="Xvc-JV-XRk" id="uyI-XF-aIi"/>
+                                    <outlet property="serialNumberLabel" destination="GFZ-is-1xW" id="aNT-92-U6Y"/>
+                                    <outlet property="valueLabel" destination="5QH-qi-fbP" id="WMY-WE-G1E"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
