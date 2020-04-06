@@ -11,7 +11,7 @@ import UIKit
 class ItemsViewController: UITableViewController{
     var itemStore: ItemStore!
     
-    @IBAction func addNewItem(_ sender: UIButton){
+    @IBAction func addNewItem(_ sender: UIBarButtonItem){
         let newItem = itemStore.createItem()
         
         if let index = itemStore.allItems.firstIndex(of: newItem){
@@ -21,23 +21,11 @@ class ItemsViewController: UITableViewController{
         }
     }
     
-    @IBAction func toggleEditingMode(_ sender: UIButton){
-        // If you are currently editing
-        if isEditing {
-            // Change text of button to inform user of editing state
-            sender.setTitle("Edit", for: .normal)
-            
-            // Turn off editing mode
-            setEditing(false, animated: true)
-        } else {
-            // Change text of button to inform user of state
-            sender.setTitle("Done", for: .normal)
-            
-            // Enter editing mode
-            setEditing(true, animated: true)
-        }
-    }
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        navigationItem.leftBarButtonItem = editButtonItem
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         // If the triggered segue is the "showItem" segue ...
@@ -59,12 +47,6 @@ class ItemsViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Get the height of the status bar
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        
-        let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
-        tableView.contentInset = insets
-        tableView.scrollIndicatorInsets = insets
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 65
     }
