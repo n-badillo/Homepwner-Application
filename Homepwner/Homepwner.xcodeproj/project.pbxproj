@@ -17,6 +17,7 @@
 		7ACED254243ADC5D008047A2 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACED253243ADC5D008047A2 /* ItemsViewController.swift */; };
 		7ACED256243ADD60008047A2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACED255243ADD60008047A2 /* Item.swift */; };
 		7ACED258243AE001008047A2 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACED257243AE001008047A2 /* ItemStore.swift */; };
+		7ACED25A243B29D7008047A2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACED259243B29D7008047A2 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7ACED253243ADC5D008047A2 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		7ACED255243ADD60008047A2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7ACED257243AE001008047A2 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		7ACED259243B29D7008047A2 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				7ACED225243ADB44008047A2 /* Main.storyboard */,
+				7ACED259243B29D7008047A2 /* ItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				7ACED256243ADD60008047A2 /* Item.swift in Sources */,
 				7ACED254243ADC5D008047A2 /* ItemsViewController.swift in Sources */,
+				7ACED25A243B29D7008047A2 /* ItemCell.swift in Sources */,
 				7ACED220243ADB44008047A2 /* AppDelegate.swift in Sources */,
 				7ACED258243AE001008047A2 /* ItemStore.swift in Sources */,
 				7ACED222243ADB44008047A2 /* SceneDelegate.swift in Sources */,
