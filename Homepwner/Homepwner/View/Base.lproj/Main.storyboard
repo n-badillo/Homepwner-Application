@@ -57,7 +57,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFZ-is-1xW">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="747" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFZ-is-1xW">
                                             <rect key="frame" x="20" y="39.5" width="31" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,6 +72,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="5QH-qi-fbP" secondAttribute="trailing" constant="20" id="FkG-IT-YiU"/>
+                                        <constraint firstItem="GFZ-is-1xW" firstAttribute="top" secondItem="Xvc-JV-XRk" secondAttribute="bottom" constant="7.5" id="UKP-Ak-lDd"/>
                                         <constraint firstItem="5QH-qi-fbP" firstAttribute="centerY" secondItem="euh-ja-cjl" secondAttribute="centerY" id="VjJ-yY-ArM"/>
                                         <constraint firstItem="GFZ-is-1xW" firstAttribute="leading" secondItem="Xvc-JV-XRk" secondAttribute="leading" id="Xt7-Kv-OSH"/>
                                         <constraint firstItem="Xvc-JV-XRk" firstAttribute="leading" secondItem="euh-ja-cjl" secondAttribute="leadingMargin" id="f78-1j-Jb3"/>
