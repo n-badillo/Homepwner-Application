@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="DA6-4X-0Be" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GLy-Ho-2bn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Ux-7B-SmR">
-                                <rect key="frame" x="8" y="52" width="398" height="802"/>
+                                <rect key="frame" x="8" y="8" width="398" height="792"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X8K-8e-ZJB">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="34"/>
@@ -67,7 +67,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP4-Aa-4kh">
-                                        <rect key="frame" x="0.0" y="126" width="398" height="676"/>
+                                        <rect key="frame" x="0.0" y="126" width="398" height="666"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -88,10 +88,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="339-XA-ej3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1w0-1c-vl7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIC-So-hq0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-653.62318840579712" y="-40.178571428571423"/>
+            <point key="canvasLocation" x="984" y="-40"/>
         </scene>
         <!--Items View Controller-->
         <scene sceneID="JEr-tn-NXO">
@@ -171,6 +172,7 @@
                                     <outlet property="nameLabel" destination="Xvc-JV-XRk" id="uyI-XF-aIi"/>
                                     <outlet property="serialNumberLabel" destination="GFZ-is-1xW" id="aNT-92-U6Y"/>
                                     <outlet property="valueLabel" destination="5QH-qi-fbP" id="WMY-WE-G1E"/>
+                                    <segue destination="DA6-4X-0Be" kind="show" id="Pej-rV-zJs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
