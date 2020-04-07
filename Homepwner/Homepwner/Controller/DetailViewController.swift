@@ -109,6 +109,9 @@ extension DetailViewController: UIImagePickerControllerDelegate {
         // Get picked image from info dictionary
         let image = info[.originalImage] as! UIImage
         
+        // Store the image in the ImageStore for the item's key
+        imageStore.setImage(image, forKey: item.itemKey)
+        
         // Put that image on the screen in the image view
         imageView.image = image
         
