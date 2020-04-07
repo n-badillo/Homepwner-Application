@@ -11,6 +11,12 @@ import UIKit
 class ItemStore{
     var allItems = [Item]()
     
+    let itemArchiveURL: URL = {
+        let documentsDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDictionay = documentsDirectories.first!
+        return documentDictionay.appendingPathComponent("items.archive")
+    }()
+    
     // @discardableResult means that the a caller of the function is free to ignore the result of calling this function
     @discardableResult func createItem() -> Item {
         let newItem = Item(random: true)
