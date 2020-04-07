@@ -16,8 +16,6 @@ class DetailViewController: UIViewController{
     
     @IBOutlet var imageView: UIImageView!
     
-    @IBAction func takePicture(_ sender: UIBarButtonItem) {
-    }
     
     var item: Item! {
         didSet{
@@ -71,9 +69,48 @@ class DetailViewController: UIViewController{
     }
 }
 
+// MARK: - UITextFieldDelegate
+
 extension DetailViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+}
+
+// MARK: - UINavigationControllerDelegate
+extension DetailViewController: UINavigationControllerDelegate {
+    
+}
+
+// MARK: - UIImagePickerControllerDelegate
+extension DetailViewController: UIImagePickerControllerDelegate {
+    
+    @IBAction func takePicture(_ sender: UIBarButtonItem) {
+        let imagePicker = UIImagePickerController()
+        // If the device has a camera, take a picture; otherise, just pick from the photo library
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            imagePicker.sourceType = .camera
+        } else {
+            imagePicker.sourceType = .photoLibrary
+        }
+        
+        imagePicker.delegate = self
+        
+        // Place image picker on the screen
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    internal func imagePickerController (_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
+        
+        // Get picked image from info dictionary
+        let image = info[.originalImage] as! UIImage
+        
+        // Put that image on the screen in the image view
+        imageView.image = image
+        
+        // Take image picker off the screen - you must call this to dismiss the method
+        dismiss(animated: true, completion: nil)
     }
 }

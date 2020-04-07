@@ -126,7 +126,6 @@
                         <outlet property="imageView" destination="8H2-Ya-3pW" id="vXx-Ez-1la"/>
                         <outlet property="nameField" destination="jJ9-UD-MZw" id="fZR-Ke-T3K"/>
                         <outlet property="serialNumberField" destination="7Bq-XS-RxR" id="MsY-IG-iCO"/>
-                        <outlet property="takePicture" destination="8HX-Kc-p1K" id="XoX-bs-IU9"/>
                         <outlet property="valueField" destination="kj4-fo-cbx" id="4QB-Rr-SPR"/>
                     </connections>
                 </viewController>
