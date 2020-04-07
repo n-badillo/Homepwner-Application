@@ -14,6 +14,11 @@ class DetailViewController: UIViewController{
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
     
+    @IBOutlet var imageView: UIImageView!
+    
+    @IBAction func takePicture(_ sender: UIBarButtonItem) {
+    }
+    
     var item: Item! {
         didSet{
             navigationItem.title = item.name
